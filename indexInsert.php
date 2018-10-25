@@ -2,11 +2,12 @@
 
 include './Queries/Queries.php';
 $objExecute = new ExecuteQueries();
-$sql ="INSERT INTO datos_personales (id_DatosP, nombre, apellido, fecha_nacimiento) VALUES ('3','josias', 'marrufo', '1997-12-04')";
+$sql ="INSERT INTO datos_personales ( nombre, apellido, fecha_nacimiento) VALUES ('danie', 'pat', '1999-11-05')";
 $valor = $objExecute->executeInsert($sql);
 if($valor){
-    echo"No se inserto los valores";
-}else{
     echo"Se inserto los valores correctamente";
+}else{
+    echo"No se inserto los valores";
 }
 ?>
+

@@ -2,10 +2,10 @@
 
 include './Queries/Queries.php';
 $objExecute = new ExecuteQueries();
-$sql ="DELETE FROM datos_personales WHERE 3";
+$sql ="DELETE FROM datos_personales WHERE datos_personales. id_Datosp = 5";
 $valor = $objExecute->executeInsert($sql);
 if($valor){
-    echo"No se inserto los valores";
+    echo"No se elimino los valores";
 }else{
-    echo"Se inserto los valores correctamente";
+    echo"Se elimino los valores correctamente";
 }

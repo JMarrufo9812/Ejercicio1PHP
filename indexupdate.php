@@ -2,7 +2,7 @@
 
 include './Queries/Queries.php';
 $objExecute = new ExecuteQueries();
-$sql ="UPDATE datos_personales (id_DatosP, nombre, apellido, fecha_nacimiento) SET ('1','eliot', 'marrufo', '1997-12-05') Where 2 "; 
+$sql ="UPDATE datos_personales SET nombre='josias', apellido='marrufo', fecha_nacimiento='1997-12-04' WHERE datos_personales. id_Datosp = 3"; 
 $valor = $objExecute->executeInsert($sql);
 if($valor){
     echo"error al actualizar los valores";
@@ -10,3 +10,4 @@ if($valor){
     echo"Se actualizaron los valores correctamente";
 }
 ?>
+
